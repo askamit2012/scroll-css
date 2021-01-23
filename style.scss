@@ -15,6 +15,10 @@ section {
     color: rgb(10, 0, 0);
     scroll-snap-align: center;
     margin: 10px auto;
+    text-decoration: none;
+    a {
+        text-decoration: none;
+    }
 
     &:nth-child(1) {
         background: chartreuse;

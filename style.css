@@ -23,6 +23,11 @@ section {
   color: #0a0000;
   scroll-snap-align: center;
   margin: 10px auto;
+  text-decoration: none;
+}
+
+section a {
+  text-decoration: none;
 }
 
 section:nth-child(1) {
