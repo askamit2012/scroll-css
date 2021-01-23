@@ -1,3 +1,11 @@
 const pages = document.querySelectorAll('section');
 
-console.log(pages[2]);
+const arrow = document.querySelector('.downArrow');
+const sec2 = document.querySelector('#sec2');
+
+console.log(sec1);
+
+arrow.addEventListener('click', () => {
+    sec2.scrollIntoView();
+})
+

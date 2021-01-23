@@ -12,7 +12,7 @@ section {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    color: #fff;
+    color: rgb(10, 0, 0);
     scroll-snap-align: center;
     margin: 10px auto;
 
@@ -29,28 +29,62 @@ section {
             padding: 10px;
             cursor: pointer;
             &:hover {
-                background: #fff;
-                color: chartreuse;
-                box-shadow: 0 0 10px #000;
-                transform: skew(45deg);
+                background: transparent;
+                // color: chartreuse;
+                color: #000;
+                box-shadow: 0 0 20px #000;
+                letter-spacing: 2px;
+                // transform: skew(45deg);
                 // filter: invert();
             }
+        }
+        .downArrow {
+            height: 48px;
+            width: 48px;
+            filter: invert(1);
+            cursor: pointer;
+            animation: arrowAnim 2s ease-in infinite;
+
+            @keyframes arrowAnim {
+                0% {
+                    transform: translateY(0);
+                }
+                50% {
+                    transform: translateY(8px);
+                }
+                100% {
+                    transform: translateY(0);
+                }
+            }
+        }
+        img {
+
         }
         
     }
     &:nth-child(2) {
-        background: gold;
-        line-height: 1.5em;
-        letter-spacing: 2px;
+        // background: gold;
+        // line-height: 1.5em;
+        // letter-spacing: 2px;
+        // border-radius: 10px;
+        // border: 4px solid red;
+        background: chartreuse;
+        line-height: 1.2em;
+        letter-spacing: 1.5px;
         border-radius: 10px;
-        border: 4px solid red;
+        border: 2px solid white;
     }
     &:nth-child(3) {
-        background: purple;
-        line-height: 2em;
-        letter-spacing: 3px;
+        // background: purple;
+        // line-height: 2em;
+        // letter-spacing: 3px;
+        // border-radius: 10px;
+        // border: 2px solid green;
+        background: chartreuse;
+        line-height: 1.2em;
+        letter-spacing: 1.5px;
         border-radius: 10px;
-        border: 2px solid green;
+        border: 2px solid white;
     }
 
     nav {
@@ -60,18 +94,27 @@ section {
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
+            text-decoration: none;
 
             li {
                 cursor: pointer;
                 padding: 2px;
+                text-decoration: none;
+                list-style: none;
+                font-size: 18px;
+
                 &:hover {
-                    background: #fff;
-                    color: chartreuse;
+                    // background: #fff;
+                    // color: chartreuse;
                     // padding: 5px;
                     transform: scale(1.2);
                     border-radius: 10px;
                 }
             }
         }
+    }
+    p{
+        padding: 10px;
+        line-height: 24px;
     }
 }
